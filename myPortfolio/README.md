@@ -1,16 +1,52 @@
-# React + Vite
+ # My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ A personal portfolio website that presents my projects, technical skills, experience, and contact information in a clean and responsive layout.
 
-Currently, two official plugins are available:
+ ## How it is built
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ The portfolio is organized into reusable sections so it is easy to update as new work is added:
 
-## React Compiler
+ - **Hero** — introduces me and highlights my main role.
+ - **About** — provides a short professional summary.
+ - **Skills** — lists the technologies and tools I use.
+ - **Projects** — showcases selected work with descriptions and links.
+ - **Contact** — makes it easy to get in touch.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ The interface is designed to be responsive, allowing it to work across desktop, tablet, and mobile screen sizes. Content, styling, and components are kept separate to make the project maintainable and extensible.
 
-## Expanding the ESLint configuration
+ ## Example project structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ ```text
+ myPortfolio/
+ ├── public/          # Static assets and images
+ ├── src/
+ │   ├── components/  # Reusable UI sections
+ │   ├── pages/       # Portfolio pages
+ │   ├── assets/      # Local images and icons
+ │   └── styles/      # Global and component styles
+ ├── package.json     # Scripts and dependencies
+ └── README.md
+ ```
+
+ ## Example project data
+
+ ```js
+ const projects = [
+	 {
+		 title: "Project name",
+		 description: "A short description of the project and its purpose.",
+		 technologies: ["HTML", "CSS", "JavaScript"],
+		 liveUrl: "https://example.com",
+		 sourceUrl: "https://github.com/username/project"
+	 }
+ ];
+ ```
+
+ ## Local development
+
+ ```bash
+ npm install
+ npm run dev
+ ```
+
+ Open the local development URL shown in the terminal to view the portfolio. Update the project data, images, and content to personalize the site.
