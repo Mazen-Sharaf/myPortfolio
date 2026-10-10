@@ -1,6 +1,7 @@
 import type { PortfolioCopy, Project, Skill } from "../types/portfolio";
 import { Icon } from "./Icon";
 import { SectionHeading } from "./SectionHeading";
+import { logoSrc } from "../utils/logo";
 
 export function Hero({ t }: { t: PortfolioCopy }) {
   return (
@@ -22,7 +23,7 @@ export function Hero({ t }: { t: PortfolioCopy }) {
       </div>
       <div className="hero-aside">
         <div className="hero-logo">
-          <img src="/my_logo.svg" alt="my_logo" />
+          <img src={logoSrc} alt="Mazen Sharaf logo" />
         </div>
       </div>
     </section>
